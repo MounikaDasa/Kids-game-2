@@ -307,8 +307,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             }
 
-            console.log("ChoosedBox:",doorNumber === "2"?"Left":"Right","CueShowed:",leftDoorArray[blockTrails],leftDoorArray[blockTrails]===1?"Left":"Right","RewardBox:",leftDoorArray[blockTrails] ===1?"Left":"Right", " Rewards:", reward, boxProbability, cueProbability );
-            experimentRecords.push({TrailNo:blockTrails+1,ChoosedBox:doorNumber === "2"?"Left":"Right",CueShowed:cueArray[blockTrails] === leftDoorArray[blockTrails ? 'Left':'Right', RewardBox:leftDoorArray[blockTrails] ===1?"Left":"Right",Rewards: reward, ReactionTime: reactionTime / 100, BoxProb: boxProbability, CueProb: cueProbability });
+            console.log("ChoosedBox:",doorNumber === "2"?"Left":"Right","CueShowed:",cueArray[blockTrails] === leftDoorArray[blockTrails] ? "Left":"Right","RewardBox:",leftDoorArray[blockTrails] ===1?"Left":"Right", " Rewards:", reward, boxProbability, cueProbability );
+            experimentRecords.push({TrailNo:blockTrails+1,ChoosedBox:doorNumber === "2"?"Left":"Right",CueShowed:cueArray[blockTrails] === leftDoorArray[blockTrails] ? "Left":"Right", RewardBox:leftDoorArray[blockTrails] ===1?"Left":"Right",Rewards: reward, ReactionTime: reactionTime / 100, BoxProb: boxProbability, CueProb: cueProbability });
             
             blockTrails++;
    
